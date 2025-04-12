@@ -1,7 +1,7 @@
 # Build website
 [group('Development')]
 build:
-  @hugo
+  @hugo --gc --minify
 
 # Create article
 [group('Development')]
