@@ -3,22 +3,6 @@
 build:
   @hugo --gc --minify
 
-# Create article
-[group('Development')]
-create *files:
-  #!/usr/bin/env bash
-
-  set -euo pipefail
-
-  # Organize files so they are sorted by year
-
-  for file in $files; do
-    # Create new content file for Hugo
-
-    # Add file to _index.md file
-
-  done
-
 # Lint content
 [group('Development')]
 lint:
