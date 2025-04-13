@@ -35,6 +35,11 @@ publish *files:
 serve:
   @hugo serve --watch -D
 
+[private]
+setup_hooks:
+  # TODO: Reassign hooks folder
+  exit
+
 # Verify all links in file
 [private]
 [group('Development')]
