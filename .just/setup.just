@@ -36,7 +36,7 @@ create-toolbox:
 enter-toolbox:
   #!/usr/bin/env bash
 
-  set -euox pipefail
+  set -euo pipefail
 
   # Create the container if it does not exist.
   if ! podman container exists cubt85iz-dot-dev-site; then
@@ -50,7 +50,7 @@ enter-toolbox:
 install-hugo VERSION="0.146.2":
   #!/usr/bin/env bash
 
-  set -euox pipefail
+  set -euo pipefail
 
   # Set the URL for the specified version of Hugo Extended
   URL="https://github.com/gohugoio/hugo/releases/download/v{{VERSION}}/hugo_extended_{{VERSION}}_linux-amd64.tar.gz"
