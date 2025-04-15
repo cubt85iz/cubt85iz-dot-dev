@@ -1,7 +1,12 @@
 baseURL: https://cubt85iz.dev/
 enableGitInfo: true
 languageCode: en-us
-title: My New Hugo Site
+title: cubt85iz.dev
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 menu:
   main:
@@ -48,6 +53,15 @@ params:
     repoId: "R_kgDOOUtHjw"
     category: "Announcements"
     categoryId: "DIC_kwDOOUtHj84Co0j3"
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/cubt85iz-logo.svg
+      dark: images/cubt85iz-logo-dark.svg
+      link: /
+      width: 60
+      height: 60 
   search:
     flexsearch:
       tokenize: forward
